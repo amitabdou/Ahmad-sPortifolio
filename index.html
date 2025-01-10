@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="fixed">
+          <div class="content">
+            <h1>
+              <span>Welcome</span>
+              <span class=sr-only>
+                For
+              </span>
+              <span aria-hidden="true">
+                <span>T</span>
+                <span class=stretch-o></span>
+                <span>My</span>
+              </span>
+              <span>portfolio</span>
+            </h1>
+            <p>x I am Ahmad Abdo 2D/3D Graphical Designer and a front end web developer x</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <article>
+          <div class="fixed"></div>
+          <div class="static">
+            <div class="content">
+              <div class="text-wrap">
+                <div class="loud-wrap">
+                  <!-- effect-1 -->
+
+                  <h2>What can I do</h2>
+                  <h1>for you </h1>
+
+                  <div class="revel"></div>
+                  <div class="revel"></div>
+                  <div class="revel"></div>
+                  <div class="revel"></div>
+                  <style>
+                    /*revel*/
+                /* General .revel styles */
+.revel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  text-align: center;
+  font-size: 2em;
+  font-family: "Bebas Neue", cursive;
+  color: #fff;
+  text-transform: uppercase;
+  --text-color: #fff;
+  width: 100%;
+z-index: 1000;
+  width: 150px;
+  height: 400px;
+  background: url("https://paulmccartney.files.wordpress.com/2009/11/beatlesclosedone.jpg");
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  position: relative;
+  clip-path: polygon(-1% 37%, 101% 37%, 101% 45%, -1% 45%);
+  transition: 0.5s;
+  letter-spacing: 0;
+}
+
+.revel:before {
+  width: 10%;
+  color: var(--text-color);
+  background: var(--bg-color);
+  position: absolute;
+  left: 0%;
+  bottom: 5px;
+  padding: 5px 0;
+}
+
+.revel:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color);
+  clip-path: polygon(-1% 37%, 101% 37%, 101% 45%, -1% 45%);
+  transition: 0.5s;
+  transform: translate(-50%, -50%);
+}
+
+.revel:hover {
+  clip-path: polygon(-1% 0%, 101% 0%, 101% 101%, -1% 101%);
+  transition: 0.5s;
+  transform: translate(-50%, -50%);
+  letter-spacing: 5px;
+  border-radius: 15px;
+}
+
+
+
+/* Specific .revel children styling */
+.revel:nth-child(3) {
+  background-position: 0 0;
+}
+.revel:nth-child(3):before {
+  content: "3D work";
+}
+
+.revel:nth-child(4) {
+  background-position: 33% 0;
+}
+.revel:nth-child(4):before {
+  content: "Graphic design";
+}
+
+.revel:nth-child(5) {
+  background-position: 67% 0;
+}
+.revel:nth-child(5):before {
+  content: "html css";
+  font-size: 1.5rem;
+}
+
+.revel:nth-child(6) {
+  background-position: 100% 0;
+}
+.revel:nth-child(6):before {
+  content: "writing";
+}
+
+                  </style>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="fixed"></div>
+          <div class="static">
+            <div class="content">
+              <h2>View my work<br /> gallery</h2>
+                 <br>
+                 <ul class="gallery filter">
+                  <li>
+                     <a href="#">
+                      <img src="myworkproductsfacebook.png" alt="work1" width="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                     <img src="eventwork.png" alt="work1" width="">
+                   </a>
+                 </li>
+                 <li class="wide">
+                  <a href="#">
+                    <img src="thumbna.png" alt="">
+                  </a>
+                </li>
+               
+             <li>
+              <a href="#">
+               <img src="NOVO.png" alt="work1" width="">
+             </a>
+           </li>
+           
+                  
+                </ul>
+                
+              
+                
+                
+            
+                </ul>
+                <style>
+                  .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  grid-auto-rows: 300px;
+  grid-auto-flow: dense;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+
+}
+
+
+
+
+.gallery li figure {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.wide {
+  grid-column: span 2;
+
+}
+
+.tall {
+  grid-row: span 2;
+
+  
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  transition: transform .3s ease-in-out;
+}
+
+/* Hover effect specific styles */
+
+/* Filter effect */
+
+.gallery.filter img {
+  transition: filter .3s ease-in-out;
+  filter: grayscale(100%);
+
+
+}
+
+
+.gallery.filter img:hover {
+  filter: none;
+}
+
+
+
+                </style>
+              </h2>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="fixed"></div>
+
+          <div class="static">
+            <div class="content">
+              <div class="scrollbox">
+                I like writing; I can help you write emails to connect with customers like this one:
+
+                Subject: Welcome to Our Community!
+                
+                Hi [Customer's Name],
+                
+                We're thrilled to have you with us! At [Company Name], we value our customers and are here to provide you with the best experience possible. If you have any questions or need assistance, feel free to reach out. We're always here to help.
+                
+                Best regards,
+                [Your Name]
+                [Your Position]
+                [Company Name]
+                
+                I also can help you with writing business proposals and marketing emails:
+                
+                Business Proposal Sample
+                
+                Executive Summary:
+                At [Your Company], we specialize in providing top-notch solutions to meet your business needs. This proposal outlines how our services can help [Client's Company] achieve its goals by leveraging our expertise in [specific area].
+                
+                Solution Overview:
+                Our approach includes [briefly describe the solution], ensuring that [Client's Company] sees measurable results.
+                
+                Next Steps:
+                We look forward to the opportunity to discuss this proposal in detail and explore how we can work together.
+                
+                Sincerely,
+                [Your Name]
+                [Your Position]
+                [Your Company]
+                
+                Marketing Email Sample
+                
+                Subject: Exclusive Offer Just for You!
+                
+                Hi [Customer's Name],
+                
+                We're excited to bring you an exclusive offer! For a limited time, enjoy [specific offer]. Don't miss out on this opportunity to [benefit of the offer].
+                
+                Click here to take advantage of this special deal: [Link]
+                
+                Best wishes,
+                [Your Name]
+                [Your Position]
+                [Company Name]
+                
+                Whether it's crafting compelling stories, copywriting, or any other type of writing you can think of, I am here to assist you in creating engaging and effective content. From personalized emails to detailed business proposals, I can tailor my writing to meet your specific needs and help you achieve your goals.
+              </div>
+
+              <h2>I Make cool stuff.</h2>
+              <div class="chat-container">
+                <div class="text-blocks">
+                  <p>I frequently use ChatGPT for various tasks.</p>
+                  <p>I also work with CSS and HTML for front-end development, as well as in writing projects.</p>
+                  <p>For graphic design, I rely on online tools.</p>
+                  <p>Ultimately, I leverage my creativity to achieve results.</p>
+                  
+                  
+                  <div class="glitch">
+                    <p>My</p>
+                    <div class="stack" style="--stacks: 3;">
+                      <span style="--index: 0;">Heads Up</span>
+                      <span style="--index: 1;">Heads Up</span>
+                      <span style="--index: 2;">Heads Up</span>
+                    </div>
+                    <span class="right">Work Flow</span>
+                  </div>
+                  
+
+                  <style></style>
+                </div>
+              </div>
+              <div class="filler">
+                <h2>Pretty cool.</h2>
+                
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="fixed">
+            <div class="content">
+              <h2>
+                <div class="main">
+                  <h1>Ahmad Abdo<div class="roller">
+                    <span id="rolltext">Front End<br/>
+                    Graphic<br/>
+                    Writer<br/>
+                    <a href="">Hire me</a>
+                   
+                    </div>
+                    </h1>
+                    
+                  </div>
+                  <style>.main{
+                    height:100vh;
+                    width:100%;  
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    text-align:center;
+                  }
+                  h1{
+                    text-align:center;
+                    text-transform: uppercase;
+                    color: #F1FAEE; 
+                    font-size: 4rem;
+                  }
+                  
+                  .roller{
+                    height: 4.125rem;
+                    line-height: 4rem;
+                    position: relative;
+                    overflow: hidden; 
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  
+
+                    color: #ffe600;
+                  }
+                  
+                  
+                  #spare-time{
+                    font-size: 1rem;
+                    font-style: italic;
+                    letter-spacing: 1rem;
+                    margin-top: 0;
+                    color: #A8DADC;
+                    text-align: center;
+                    position: absolute;
+                    
+                  }
+                  
+                  .roller #rolltext {
+                    position: absolute;
+                    top: 0;
+                    animation: slide 5s infinite;  
+
+                    
+                  }
+                  
+                  @keyframes slide {
+                    0%{
+                      top:0;
+                    }
+                    25%{
+                      top: -4rem;    
+
+                    }
+                    50%{
+                      top: -8rem;
+
+                    }
+                    72.5%{
+                      top: -12.25rem;
+
+                    }
+                  }
+                  
+                  @media screen and (max-width: 600px){
+                    h1{
+                    text-align:center;
+                    text-transform: uppercase;
+                    color: #F1FAEE; 
+                    font-size: 2.125rem;
+
+                  }
+                    
+                    .roller{
+                    height: 2.6rem; 
+                    line-height: 2.125rem;  
+                    position: relative;
+                    overflow: hidden; 
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    }
+                    
+                    #spare-time {
+                      font-size: 1rem;
+                      letter-spacing: 0.1rem;
+                    }
+                    
+                    .roller #rolltext {  
+                    animation: slide-mob 5s infinite;  
+                  }
+                    
+                    @keyframes slide-mob {
+                    0%{
+                      top:0;
+                    }
+                    25%{
+                      top: -2.125rem;    
+                    }
+                    50%{
+                      top: -4.25rem;
+                    }
+                    72.5%{
+                      top: -6.375rem;
+                    }
+                  }
+                  }</style>
+              </h2>
+            </div>
+           
+          </div>
+          <footer>
+            <div class="content">
+                
+              
+              <h2>Thanks for stopping by.</h2>
+              
+            </div>
+          </footer>
+          <style>
+            footer {
+              padding: 4rem 1rem;
+              text-align: center;
+              position: sticky;
+              bottom: 0;
+            }
+          </style>
+        </article>
+        
+      </section>
+      
+    </main>
+  </body>
+</html>
